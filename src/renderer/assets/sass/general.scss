@@ -1,0 +1,81 @@
+.btn {
+    /* Don't underline the text on the button, even if it's <a> tag */
+    text-decoration: none;
+    &.btn-default {
+        color: black;
+    }
+    .icon {
+        // the icon was a bit below the base line
+        position: relative;
+        top: -1px;
+    }
+}
+
+/* Sometimes we put headers inside the first row in thead, should be separated */
+table tr.headers-row th {
+    border-top: 1px solid #ddd;
+    padding-top: 4px;
+}
+
+
+/* Original: top 20px bottom 10px */
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.relative {
+    position: relative;
+}
+.top100 {
+    top: 100px;
+}
+.top200 {
+    top: 200px;
+}
+
+.btn-input-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.page-title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.center {
+    // https://stackoverflow.com/questions/283961/centering-a-div-block-without-the-width
+    position: relative;
+    display: inline-block; // instantly shrinks width
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.btn-large-font {
+    &, & .icon {
+        font-size: 20px;
+    }
+    & .icon {
+        top: 2px;
+        margin-right: 4px;
+    }
+}
+
+.col-bordered {
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.UILogger {
+    color: #999;
+}
+
+.minus-top-toolbar {
+    margin-top: 39px;
+}
