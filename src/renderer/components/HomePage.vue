@@ -1,6 +1,6 @@
 <template>
 <div class="padded">
-    <system-information/>
+  <system-information/>
 </div>
 </template>
 
