@@ -20,3 +20,20 @@
   export default {
   }
 </script>
+
+<style lang="scss">
+.alert-warning {
+    color: rgb(138, 109, 59);
+    background-color: rgb(252, 248, 227);
+    border-color: rgb(250, 235, 204);
+}
+.alert {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px;
+}
+</style>

@@ -9,8 +9,8 @@
     <nav-group-item><icon icon="tools"></icon>Settings</nav-group-item>
   </nav-group>
 
-  <div class="VersionFooter">
-      {{ version }}
+  <div class="version">
+      v{{ version }}
   </div>
 
   </div>
@@ -36,14 +36,12 @@ export default {
     margin-bottom: 10px;
 }
 
-.versionFooter {
+.version {
     text-align: center;
     font-size: 10px;
     padding: 5px;
 
-    position: absolute;
     width: 100%;
     bottom: 0;
 }
-
 </style>
