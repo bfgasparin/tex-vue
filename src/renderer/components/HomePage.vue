@@ -1,7 +1,5 @@
 <template>
-<div class="padded">
   <system-information/>
-</div>
 </template>
 
 <script>
@@ -9,11 +7,6 @@
 
   export default {
     name: 'home-page',
-    components: { SystemInformation },
-    methods: {
-      open (link) {
-        this.$electron.shell.openExternal(link)
-      }
-    }
+    components: { SystemInformation }
   }
 </script>

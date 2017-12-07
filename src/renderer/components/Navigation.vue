@@ -3,12 +3,24 @@
   <img class="logo" id="logo" src="~@/assets/logo.png" alt="electron-vue">
 
   <nav-group title="Activities">
-    <nav-group-item :active="true"><icon icon="home"></icon>Home</nav-group-item>
-    <nav-group-item><icon icon="archive"></icon>Wallets</nav-group-item>
-    <nav-group-item><icon icon="chart-line"></icon>Exchange</nav-group-item>
-    <nav-group-item><icon icon="tools"></icon>Settings</nav-group-item>
-  </nav-group>
 
+    <router-link to="/" tag="span">
+      <nav-group-item :active="$route.name == 'home-page'">
+          <icon icon="home"></icon>Home
+      </nav-group-item>
+    </router-link>
+
+    <nav-group-item><icon icon="archive"></icon>Wallets (todo)</nav-group-item>
+
+    <nav-group-item><icon icon="chart-line"></icon>Exchange (todo)</nav-group-item>
+
+    <router-link to="/settings" tag=span>
+      <nav-group-item :active="$route.name == 'settings-page'">
+          <icon icon="tools"></icon>Settings
+      </nav-group-item>
+    </router-link>
+
+  </nav-group>
   <div class="version">
       v{{ version }}
   </div>

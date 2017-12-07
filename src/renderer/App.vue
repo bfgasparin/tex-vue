@@ -7,7 +7,9 @@
             <navigation/>
           </pane>
           <pane>
-            <router-view></router-view>
+            <div class="padded">
+              <router-view></router-view>
+            </div>
           </pane>
         </pane-group>
       </window-content>
