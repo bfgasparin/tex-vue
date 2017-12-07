@@ -1,5 +1,5 @@
 <template>
-  <div class="padded">
+  <div>
     <h1>Tomorrow Exchange</h1>
 
     <p>

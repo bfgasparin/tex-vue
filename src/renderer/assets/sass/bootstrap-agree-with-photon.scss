@@ -1,0 +1,67 @@
+.nav-group {
+  a:hover, a:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav-group-title {
+    padding-bottom: 4px;
+  }
+}
+
+.btn-group .active:focus, .btn-group .active:hover {
+  border: 1px solid transparent;
+  background-color: #6d6c6d;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 1px 5px;
+  vertical-align: middle;
+}
+
+/* add important from photon */
+tr:active,
+.table-striped tr:active:nth-child(even) {
+  color: #fff;
+  background-color: #116cd6 !important;
+}
+
+.btn, .btn:hover, .btn:focus {
+  color: white !important;
+  .icon {
+    color: white !important;
+  }
+}
+.btn-default, .btn-default:hover, .btn-default:focus {
+  color: black !important;
+  .icon {
+    color: #777 !important;
+  }
+  &.active {
+    color: white !important;
+  }
+}
+
+.toolbar {
+  padding-top: 4px;
+}
+
+/* weird photon rule about overflowing h* */
+h1,h2,h3,h4,h5,h6 {
+  overflow: visible;
+}
+
+/* thinner border for focused inputs */
+.form-control:focus {
+  border-color: #6db3fd;
+  box-shadow: none !important;
+}
+
+input, .form-control {
+  height: 1em;
+}
+
+table.no-row-focus tr:active {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
