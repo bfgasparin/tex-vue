@@ -46,6 +46,10 @@ app.on('activate', () => {
   }
 })
 
+app.on('ping', (event, data) => {
+  event.sender.send('pong', Math.random())
+})
+
 /**
  * Auto Updater
  *
